@@ -22,14 +22,24 @@ https://developer.cisco.com/docs/sandbox/#!overview/all-networking-sandboxes
 
 If you're using the sandbox when you first login there's already a premade simulation you can try out. I'm going to stop and delete this for now and walk you through the process of creating you're own simulation but feel free to explore the simulation to get to grips .
 
+
+Cisco Modeling Labs – Today Cisco Modeling Labs supports the following Cisco images:
+IOSv and IOSvL2
+NX-OSv and NX-OS 9000v
+IOS XRv and IOS XRv 9000
+IOS XE (CSR1000v)
+ASAv
+
+
 # The API
 
 One of the real advantages of this version of CML is the excellent API which allows us to automate many of the common tasks when using CML. As mentioned previously this could allow for integration into a CICD pipeline. 
 
 Tasks we could automate include:
 
-Spin up and down simulations
-Edit simulations
-Get information from devices on a simulation
+* Spin up and down simulations
+* Edit simulations while running (add extra link, add node etc)
+* Get detailed information from devices on a simulation
+* Conduct actions such as a packet capture
 
 # Python SDK
