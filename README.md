@@ -106,11 +106,9 @@ Make sure you have the CML environment selected like the animation above. Now we
 
 #### Create a Lab
 
-Now we've authenticated and have our authorisation token take a copy of that from the body response, we'll need it in a minute. Now it's time to try out another API endpoint. Lets try create a new lab simulation. Under the endpoint folder "labs" select the "Create new lab" endpoint.
+Now we've authenticated and have our authorisation token, take a copy of that from the body response. We'll need it in a minute, now it's time to try out another API endpoint. Let's try create a new lab simulation, under the endpoint folder "labs" select the "Create new lab" endpoint.
 
-Go to the authorisation tab and select type "bearer token" and paste in the response from the last step, your authentication token. Edit the title in the call also to give your new lab simulation a name.
-
-Press send and examine the response, you should get a response like below to tell you it's been sucessful. Examine your CML dashboard too to verify
+From there to the authorisation tab and select type "bearer token" and paste in the response from the last step, your authentication token. Edit the title in the call also to give your new lab simulation a name, press send and examine the response. You should get a response like below to tell you it's been sucessful. Examine your CML dashboard too to verify
 
 ```
 {
@@ -126,15 +124,17 @@ Press send and examine the response, you should get a response like below to tel
 
 ![](images/create-lab.gif)
 
-#### Add devices
+#### Import a topology
  
-Realistically, when you're just getting started
+Realistically, when you're just getting started you're probably not going to create a topology with the API then add each individual device and config. You're likely to have a test network you'll set up once and want to use multiple times, for that usecase we're going to examine how to import an existing topology and start the simulation using only the API
 
-Take the yaml output below and copy it into the body of the request. CML will take this and build our lab from it
+Take the yaml output below and copy it into the body of the request. This can also be found in the CML-topologies folder of this repo. This will instruct CML exactly how our lab should look like and how devices should be configured.
 
-Again don't forget to copy across your authentication token too.
+Again don't forget to copy across your authentication token too into the authentication tab.
 
-You'll also want to edit the endpoint given so that you give your simulation you're abot to create a name
+You'll also want to edit the endpoint given so that you give your simulation you're about to create a name. Edit the URL endpoint with the name you wish to give your simulation.
+
+![](images/import-api.gif)
  
  ```
  lab:
@@ -236,11 +236,13 @@ links:
 
 Go back and check your simulations, you should see the above simulation has been added. Now to start that simply take the lab ID response and
 
+![](images/start-api.gif)
+
 Congratulations, you've used the API to create and start your own topologies.
 
 #### Convert to code
 
-One of the really nice features of Postman is the ability to convert your REST API call into code which you can use in a programming language of your choice. To do this select the code option on the API call you want to convert and select your langauge you want the code in. Postman will provide you with an example you can use, this is really nice if you're just getting started!
+One of the really nice features of Postman is the ability to convert your REST API call into code which you can use in a programming language of your choice. To do this select the code option on the API call you want to convert and select your langauge you want the code in. Postman will provide you with an example you can use, this is really nice if you're just getting started! With this you might now have enough to get building your own scripts.
 
 ![](images/code.gif)
 
