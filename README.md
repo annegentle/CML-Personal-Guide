@@ -64,7 +64,7 @@ To import, thats even easier from the main CML screen select the "Import Lab" bu
 
 Try this with your own topology, download it, delete it then important again. Although feel free to import a topology from the folder in this repo called "topologies" where we have a few options in there.
 
-## Automation
+## CML Automation
 
 By now you should be comfortable with the basics of topologies, how you create them, change and delete them. In this next section what we're now going to do is examine the REST API for CML with a couple of example usecases.
 
@@ -83,32 +83,58 @@ Tasks we could automate include:
 
 If you're using the sandbox the API documentation can be found at https://10.10.20.161/api/v0/ui/ 
 
-The documentation goes into a lot of detail on the endpoints available to you and also provides an environment where you can try the endpoints out. For example in the animations below where we get an authentication token then use that to get a list of the available sample labs.
+The documentation goes into a lot of detail on the endpoints available to you and also provides an environment where you can try the endpoints out. For example in the animations below where we get an authentication token then use that to get a list of the available sample labs. For some users this will get you up and running and you'll be able to experiment with the API... If you're looking to understand a bit more read on...
 
 ![](images/swagger.gif)
 ![](images/labs.gif)
 
 #### Postman
 
-To get
+To get to grips with the API we're going to use API testing tool Postman to try out a few common tasks that the API is capable of
 
 In the postman folder of this repo we have included a Postman collection which can be imported into your postman environmeent by using the 'import' button on the top left of the screen. This includes 135 different endpoints for using the CML API and is a quick way for us to understand the API's capabilities.
 
 ![](images/import.gif)
 
-We need to set an environment variable of baseUrl. If you are using the sandbox this will be 'https://10.10.20.161/api/v0'
+We need to set an environment variable of baseUrl so our calls go to the right place. If you are using the sandbox this will be 'https://10.10.20.161/api/v0'. If you're using your own instance, change the IP address to suit your deployment. To set the environment variables, select the 'eye' icon and create a new environment, call it CML and create just one variable called baseUrl with the value above. (case sensitive). 
 
 ![](images/env.gif)
 
+Make sure you have the CML environment selected like the animation above. Now we're ready to get your auth token as we did with the swagger documentation. To do that select the endpoint on the left hand side called "Authenticate to the system, get a web token" Select the body and ensure our username and password is going to be sent in the request, in our case for the sandbox developer/C1sco12345. Once you do that examine the response and see the web token thats returned.
 
 ![](images/auth.gif)
 
 #### Create a Lab
 
-Now we've authenticated and have our authorisation token take a copy of that from the body response, we'll need it in a minute. Now it's time to try out another API endpoint.
+Now we've authenticated and have our authorisation token take a copy of that from the body response, we'll need it in a minute. Now it's time to try out another API endpoint. Lets try create a new lab simulation. Under the endpoint folder "labs" select the "Create new lab" endpoint.
+
+Go to the authorisation tab and select type "bearer token" and paste in the response from the last step, your authentication token. Edit the title in the call also to give your new lab simulation a name.
+
+Press send and examine the response, you should get a response like below to tell you it's been sucessful. Examine your CML dashboard too to verify
+
+```
+{
+  "state": "DEFINED_ON_CORE",
+  "created": "2020-05-12 22:15:41",
+  "lab_title": "testLab",
+  "lab_description": "",
+  "node_count": 0,
+  "link_count": 0,
+  "id": "bdccbe"
+}
+```
 
 ![](images/create-lab.gif)
 
 #### Add devices
 
+
+#### Convert to code
+
+One of the really nice features of Postman is the ability to convert your REST API call into code which you can use in a programming language of your choice. To do this select the code option on the API call you want to convert and select your langauge you want the code in. Postman will provide you with an example you can use, this is really nice if you're just getting started!
+
+![](images/code.gif)
+
 ### Python SDK
+
+Alternatively, 
