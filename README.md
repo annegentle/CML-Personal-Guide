@@ -130,11 +130,11 @@ Press send and examine the response, you should get a response like below to tel
  
 Realistically, when you're just getting started
 
-Take the yaml output below and copy it into the body of the
+Take the yaml output below and copy it into the body of the request. CML will take this and build our lab from it
 
-Again don't forget to copy across your authentication token too
+Again don't forget to copy across your authentication token too.
 
-You'll also want to edit
+You'll also want to edit the endpoint given so that you give your simulation you're abot to create a name
  
  ```
  lab:
