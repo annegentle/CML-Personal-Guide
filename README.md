@@ -241,7 +241,7 @@ Go back and check your simulations, you should see the above simulation has been
   "warnings": []
 }
 
-When you find the correct endpoint it should look a little something like this "{{baseUrl}}/labs/:lab_id/start" replace the :lab_id with the id from our response above, in our case it should read "{{baseUrl}}/labs/9e9cde/start" but that id will vary in your local environment
+When you find the correct endpoint it should look a little something like this ```"{{baseUrl}}/labs/:lab_id/start"``` replace the :lab_id with the id from our response above, in our case it should read ```"{{baseUrl}}/labs/9e9cde/start"``` but that id will vary in your local environment
 
 Again don't forget to copy across your authentication token too into the authentication tab and send the request. If you recieve ```"Success"``` as your response it should have worked so now login to CML and check your simulation, it should now be starting and the devices booting up like our animation below.
 
