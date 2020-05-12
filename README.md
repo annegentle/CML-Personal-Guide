@@ -246,6 +246,3 @@ One of the really nice features of Postman is the ability to convert your REST A
 
 ![](images/code.gif)
 
-### Python SDK
-
-Alternatively, 
