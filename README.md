@@ -62,7 +62,7 @@ Try this with your own topology, download it, delete it then important again. Al
 
 ## Automation
 
-By now you should be comfortable 
+By now you should be comfortable with the basics of topologies, how you create them, change and delete them. In this next section what we're now going to do is examine the REST API for CML with a couple of example usecases.
 
 ### The API
 
@@ -74,5 +74,7 @@ Tasks we could automate include:
 * Edit simulations while running (add extra link, add node etc)
 * Get detailed information from devices on a simulation
 * Conduct actions such as a packet capture
+
+#### Swagger documentation
 
 ### Python SDK
