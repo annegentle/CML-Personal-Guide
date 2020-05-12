@@ -83,4 +83,10 @@ If you're using the sandbox the API documentation can be found at https://10.10.
 
 ![](images/swagger.png)
 
+#### Authentication Token
+
+#### Create a Lab
+
+#### Add devices
+
 ### Python SDK
