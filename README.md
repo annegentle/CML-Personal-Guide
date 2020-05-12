@@ -94,14 +94,14 @@ To get
 
 In the postman folder of this repo we have included a Postman collection which can be imported into your postman environmeent by using the 'import' button on the top left of the screen. This includes 135 different endpoints for using the CML API and is a quick way for us to understand the API's capabilities.
 
-
+![](images/import.gif)
 
 We need to set an environment variable of baseUrl. If you are using the sandbox this will be 'https://10.10.20.161/api/v0'
 
-[](images/env.gif)
+![](images/env.gif)
 
 
-[](images/auth.gif)
+![](images/auth.gif)
 
 #### Create a Lab
 
