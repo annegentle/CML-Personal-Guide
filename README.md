@@ -79,7 +79,7 @@ Tasks we could automate include:
 
 #### Swagger documentation
 
-If you're using the sandbox the API documentation can be found at https://10.10.20.161/api/v0/ui/ This goes into a lot of detail on the endpoints available to you and also provides an environment where you can try the endpoints out.
+If you're using the sandbox the API documentation can be found at https://10.10.20.161/api/v0/ui/ This goes into a lot of detail on the endpoints available to you and also provides an environment where you can try the endpoints out. For example in the animations below I get an authentication token.
 
 ![](images/swagger.png)
 
