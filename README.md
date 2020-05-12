@@ -247,7 +247,6 @@ Again don't forget to copy across your authentication token too into the authent
 
 ![](images/start-api.gif)
 
-Congratulations, you've used the API to create and start your own topologies. 
 
 #### Convert to code
 
@@ -255,4 +254,5 @@ One of the really nice features of Postman is the ability to convert your REST A
 
 ![](images/code.gif)
 
-### Python SDK
+Congratulations, you've used the API to create and start your own topologies.  Hopefully you can now start to see how much of the tasks needed to create and run a test network can now simply be automated with a couple of simple scripts, this hopefully will start to allow your to embed CML into your own workflows, potentially when you're making device changes or looking to do network testing.
+
