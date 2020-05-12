@@ -108,7 +108,7 @@ Make sure you have the CML environment selected like the animation above. Now we
 
 Now we've authenticated and have our authorisation token, take a copy of that from the body response. We'll need it in a minute, now it's time to try out another API endpoint. Let's try create a new lab simulation, under the endpoint folder "labs" select the "Create new lab" endpoint.
 
-From there to the authorisation tab and select type "bearer token" and paste in the response from the last step, your authentication token. Edit the title in the call also to give your new lab simulation a name, press send and examine the response. You should get a response like below to tell you it's been sucessful. Examine your CML dashboard too to verify
+From there to the authorisation tab and select type "bearer token" and paste in the response from the last step, your authentication token. Edit the title also in the call also to give your new lab simulation a name, press send and examine the response. You should get a response like below to tell you it's been sucessful. Examine your CML dashboard to verify that the lab has been created but it should be blank.
 
 ```
 {
@@ -126,9 +126,9 @@ From there to the authorisation tab and select type "bearer token" and paste in 
 
 #### Import a topology
  
-Realistically, when you're just getting started you're probably not going to create a topology with the API then add each individual device and config. You're likely to have a test network you'll set up once and want to use multiple times, for that usecase we're going to examine how to import an existing topology and start the simulation using only the API
+Realistically, when you're just getting started you're probably not going to create a topology with the API then add each individual device and config, it's possible but a bit more time consuming. What you're likely to have is an example test network you'll set up once and want to use multiple times, for that usecase we're going to examine how to import an existing topology and start the simulation using only the API and a yaml file describing our test network
 
-Take the yaml output below and copy it into the body of the request. This can also be found in the CML-topologies folder of this repo. This will instruct CML exactly how our lab should look like and how devices should be configured.
+Take the yaml output below and copy it into the body of the request. This can also be found in the CML-topologies folder of this repo. This will instruct CML exactly how our lab should look like and how devices should be configured. This yaml file is the original simulation we built in the basics section, so you can see how easy it is to build these topologys and reuse multiple times.
 
 Again don't forget to copy across your authentication token too into the authentication tab.
 
@@ -246,3 +246,4 @@ One of the really nice features of Postman is the ability to convert your REST A
 
 ![](images/code.gif)
 
+### Python SDK
