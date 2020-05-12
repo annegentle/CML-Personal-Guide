@@ -79,9 +79,10 @@ Tasks we could automate include:
 
 #### Swagger documentation
 
-If you're using the sandbox the API documentation can be found at https://10.10.20.161/api/v0/ui/ This goes into a lot of detail on the endpoints available to you and also provides an environment where you can try the endpoints out. For example in the animations below where we get an authentication token.
+If you're using the sandbox the API documentation can be found at https://10.10.20.161/api/v0/ui/ This goes into a lot of detail on the endpoints available to you and also provides an environment where you can try the endpoints out. For example in the animations below where we get an authentication token then use that to get a list of the available sample labs.
 
-![](images/swagger.png)
+![](images/swagger.gif)
+![](images/labs.gif)
 
 #### Authentication Token
 
