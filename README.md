@@ -247,7 +247,6 @@ Again don't forget to copy across your authentication token too into the authent
 
 ![](images/start-api.gif)
 
-
 #### Convert to code
 
 One of the really nice features of Postman is the ability to convert your REST API call into code which you can use in a programming language of your choice. To do this select the code option on the API call you want to convert and select your langauge you want the code in. Postman will provide you with an example you can use, this is really nice if you're just getting started! With this you might now have enough to get building your own scripts.
