@@ -234,11 +234,20 @@ links:
     n2: n1
 ```
 
-Go back and check your simulations, you should see the above simulation has been added. Now to start that simply take the lab ID response and
+Go back and check your simulations, you should see the above simulation has been added in your CML dashboard however it's not been started yet. Let's look at another API endpoint that will start our simulation for us and boot the devices up. From the reponse we got you should see an id value, this is the id of our lab that has been created take a copy of that and search for the endpoint "Start the specified lab as a simulation."
+
+{
+  "id": "9e9cde",
+  "warnings": []
+}
+
+When you find the correct endpoint it should look a little something like this "{{baseUrl}}/labs/:lab_id/start" replace the :lab_id with the id from our response above, in our case it should read "{{baseUrl}}/labs/9e9cde/start" but that id will vary in your local environment
+
+Again don't forget to copy across your authentication token too into the authentication tab and send the request. If you recieve ```"Success"``` as your response it should have worked so now login to CML and check your simulation, it should now be starting and the devices booting up like our animation below.
 
 ![](images/start-api.gif)
 
-Congratulations, you've used the API to create and start your own topologies.
+Congratulations, you've used the API to create and start your own topologies. 
 
 #### Convert to code
 
