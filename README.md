@@ -50,7 +50,19 @@ Tip: A really nice simple feature is the WAN emulation node that I've included i
 
 ### Importing a topology
 
+You also have the option of exporting/importing a topologies into CML. To export when you're in the CML workbench for a lab this can simply be done by selecting the 3 horizontal lines drop down and selecting "download lab" you will then be prompted to download your lab.
+
+![](images/export-lab.gif)
+
+To import, thats even easier from the main CML screen select the "Import Lab" button on the top right and then provide CML with the YAML file lab descriptor. CML will then do the rest and direct you to your newly imported topology. It's that easy!
+
+![](images/import-lab.gif)
+
+Try this with your own topology, download it, delete it then important again. Although feel free to import a topology from the folder in this repo called "topologies" where we have a few options in there.
+
 ## Automation
+
+By now you should be comfortable 
 
 ### The API
 
