@@ -10,11 +10,9 @@ One of the key usecases of CML-2 is for integrating in CICD. One of the advtange
 
 To follow this lab you will need an instance of CML2. For this you have 2 options the first to build your own environment or to use the prebuilt DevNet sandbox.
 
-If you are looking to build your own CML environment you'll first need to purchase licenses for CML, these come in two flavours.
+If you are looking to build your own CML environment you'll first need to purchase licenses for  limited to 20 nodes Can be purchased for $199. If you are interested in purchasing CML Personal you can do so from this [link](https://learningnetworkstore.cisco.com/cisco-modeling-labs-personal/cisco-cml-personal) 
 
-Enterprise - . If you are interested in CML Enterprise please contact your Cisco account team or a Cisco partner
-
-Personal - Which is $199. If you are interested in purchasing CML Personal you can do so from this [link](https://learningnetworkstore.cisco.com/cisco-modeling-labs-personal/cisco-cml-personal) 
+There is also a Enterprise edition which allows a higher node count and more flexibility in terms, for more information on this reach out to your Cisco account team or a Cisco partner.
 
 Alternatively, if you'd just like to try CML out you do have the excellent DevNet sandbox where you can reserve an instance of CML2 for up to 4 hours. This sandbox provides access to a Cisco Modeling Labs system that can be used to explore the capabilities of the newest release of Cisco Modeling Labs. This is quite a generous with almost 40GB of RAM and 57GB of disk space so theres space to do some pretty decent simulations. All DevNet sandboxes are completely free and can be accessed within seconds.
 
