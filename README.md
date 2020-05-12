@@ -127,6 +127,7 @@ Press send and examine the response, you should get a response like below to tel
 ![](images/create-lab.gif)
 
 #### Add devices
+topologies
 
 
 #### Convert to code
