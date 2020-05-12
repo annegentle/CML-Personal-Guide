@@ -127,8 +127,116 @@ Press send and examine the response, you should get a response like below to tel
 ![](images/create-lab.gif)
 
 #### Add devices
-topologies
+ 
+Realistically, when you're just getting started
 
+Take the yaml output below and copy it into the body of the
+
+Again don't forget to copy across your authentication token too
+
+You'll also want to edit
+ 
+ ```
+ lab:
+  description: ''
+  notes: ''
+  timestamp: 1589315403.782141
+  title: Lab at Tue 20:30 PM
+  version: 0.0.3
+nodes:
+  - id: n0
+    label: csr1000v-0
+    node_definition: csr1000v
+    x: -600
+    y: -50
+    configuration: hostname inserthostname_here
+    image_definition: csr1000v-161101b
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: GigabitEthernet1
+        type: physical
+      - id: i2
+        slot: 1
+        label: GigabitEthernet2
+        type: physical
+      - id: i3
+        slot: 2
+        label: GigabitEthernet3
+        type: physical
+      - id: i4
+        slot: 3
+        label: GigabitEthernet4
+        type: physical
+  - id: n1
+    label: csr1000v-1
+    node_definition: csr1000v
+    x: 0
+    y: -50
+    configuration: hostname inserthostname_here
+    image_definition: csr1000v-161101b
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: GigabitEthernet1
+        type: physical
+      - id: i2
+        slot: 1
+        label: GigabitEthernet2
+        type: physical
+      - id: i3
+        slot: 2
+        label: GigabitEthernet3
+        type: physical
+      - id: i4
+        slot: 3
+        label: GigabitEthernet4
+        type: physical
+  - id: n2
+    label: wan-em-0
+    node_definition: wan_emulator
+    x: -300
+    y: -100
+    configuration: |-
+      LATENCY="500"
+      JITTER="5"
+      LOSS="30.0"
+      BANDWIDTH="512"
+    image_definition: alpine-3-10-wanem
+    tags: []
+    interfaces:
+      - id: i0
+        slot: 0
+        label: eth0
+        type: physical
+      - id: i1
+        slot: 1
+        label: eth1
+        type: physical
+links:
+  - id: l0
+    i1: i1
+    n1: n0
+    i2: i0
+    n2: n2
+  - id: l1
+    i1: i1
+    n1: n2
+    i2: i1
+    n2: n1
+```
+
+Go back and check your simulations, you should see the above simulation has been added. Now to start that simply take the lab ID response and
+
+Congratulations, you've used the API to create and start your own topologies.
 
 #### Convert to code
 
