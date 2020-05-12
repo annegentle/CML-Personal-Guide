@@ -20,6 +20,8 @@ Alternatively and what I'd recommend doing if you're just starting out and just 
 
 https://developer.cisco.com/docs/sandbox/#!overview/all-networking-sandboxes 
 
+To complete the API section of this lab youwill also need API testing tool postman. To download that please visit Postmans website [here](https://www.postman.com) and install the app for your platform
+
 ## The Basics
 
 If you're using the sandbox when you first login there's already a premade simulation you can try out. I'm going to stop and delete this for now and walk you through the process of creating you're own simulation but feel free to explore the simulation to get to grips .
@@ -86,9 +88,17 @@ The documentation goes into a lot of detail on the endpoints available to you an
 ![](images/swagger.gif)
 ![](images/labs.gif)
 
-#### Authentication Token
+#### Postman
+
+To get
+
+In the postman folder of this repo we have included a Postman collection which can be imported into your postman environmeent by using the 'import' button on the top left of the screen. This includes 135 different endpoints for using the CML API and is a quick way for us to understand the API's capabilities.
+
+We need to set an environment variable of baseUrl. If you are using the sandbox this will be 'https://10.10.20.161/api/v0'
 
 #### Create a Lab
+
+Now we've authenticated and have our authorisation token take a copy of that from the body response, we'll need it in a minute. Now it's time to try out another API endpoint.
 
 #### Add devices
 
