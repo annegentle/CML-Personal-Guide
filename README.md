@@ -1,4 +1,4 @@
-# Getting started with Cisco Modelling Labs (Personal and Enterprise)
+# Getting started with Cisco Modelling Labs
 
 Cisco Modeling Labs is a tool for building virtual network simulations (or labs) for you to test out new topologies, protocols, and config changes; automate network tests via CI/CD pipeline integration; and learn new things about the cool world of networking. Cisco Modelling Labs 2 has been rebuilt from the ground up, with an all new HTML5 user interface and smaller footprint allowing for much greater performance in simulations.
 
