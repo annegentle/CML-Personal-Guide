@@ -269,4 +269,4 @@ For engineers that are familiar with working in Python there is also Python SDK,
 
 This can be used for automation scripts directly in Python but also for third party integrations / plugins which need to integrate with a simulated network. Examples already existing include this [Ansible module.](https://github.com/CiscoDevNet/ansible-virl)
 
-Documentation for the Python clietn SDK can be found [here.](https://github.com/ciscodevnet/virl2-client)
+Documentation for the Python client SDK can be found [here.](https://github.com/ciscodevnet/virl2-client)
