@@ -1,8 +1,8 @@
 # Getting started with Cisco Modelling Labs
 
-Cisco Modeling Labs is a tool for building virtual network simulations (or labs) for you to test out new topologies, protocols, and config changes; automate network tests via CI/CD pipeline integration; and a safe place for you to try out new things. Cisco Modelling Labs 2 the latest version has been rebuilt from the ground up, with an all new HTML5 user interface and smaller footprint allowing for much greater performance in simulations.
+Cisco Modeling Labs is a tool for building virtual network simulations that you to test out new topologies, protocols, and config changes. It is a safe place for you to try out new things. Cisco Modelling Labs 2, the latest version has been rebuilt from the ground up, with an all new HTML5 user interface and smaller footprint allowing for much greater performance in simulations.
 
-The topic of network simulation is becoming an increasingly important area, particuarly with organisations looking to adopt network automation, we often need safe environments where we can test and understand our automation tooling is working correctly so that when we deploy to production networks we know what we're expecting to happen.
+The topic of network simulation is becoming an increasingly important area, particuarly with organisations looking to adopt network automation, we often need safe environments where we can test and understand our automation tooling is working correctly so that when we deploy to production networks we know what we're expecting to happen. 
 
 One of the key usecases of CML-2 is to provide that network testing platform for integrating in environments such as CICD pipelines. A big advantage of CML-2 over other simulation systems is the new REST API which allows us to automate the creation and running of simulations. After doing an intitial introduction of CML we'll explore the API and understand how it can be leveraged. In this guide we're going to get the user set up with CML for the first time then examine the API under the hood of CML and look at how we could potentially leverage it for some interesting usecases.
 
