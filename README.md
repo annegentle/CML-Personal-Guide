@@ -263,3 +263,10 @@ One of the really nice features of Postman is the ability to convert your REST A
 
 Congratulations, you've used the API to create and start your own topologies.  Hopefully you can now start to see how much of the tasks needed to create and run a test network can now simply be automated with a couple of simple scripts, this hopefully will start to allow your to embed CML into your own workflows, potentially when you're making device changes or looking to do network testing.
 
+### Python client SDK
+
+For engineers that are familiar with working in Python there is also Python SDK, it is a pure Python implementation that requires Python3. This uses the same API however provides  a convenient interface to control the lifecycle of a network simulation.
+
+This can be used for automation scripts directly in Python but also for third party integrations / plugins which need to integrate with a simulated network. Examples already existing include this [Ansible module.](https://github.com/CiscoDevNet/ansible-virl)
+
+Documentation for the Python clietn SDK can be found [here.](https://github.com/ciscodevnet/virl2-client)
