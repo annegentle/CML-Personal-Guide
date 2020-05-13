@@ -265,7 +265,7 @@ Congratulations, you've used the API to create and start your own topologies.  H
 
 ### Python client SDK
 
-For engineers that are familiar with working in Python there is also Python SDK, it is a pure Python implementation that requires Python3. This uses the same API however provides  a convenient interface to control the lifecycle of a network simulation.
+For engineers that are familiar with working in Python there is also Python SDK which is available for Python 3. This uses the same API however provides a convenient interface to control the lifecycle of a network simulation from within your favourite language.
 
 This can be used for automation scripts directly in Python but also for third party integrations / plugins which need to integrate with a simulated network. Examples already existing include this [Ansible module.](https://github.com/CiscoDevNet/ansible-virl)
 
