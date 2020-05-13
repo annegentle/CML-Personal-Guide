@@ -240,10 +240,12 @@ links:
 
 Go back and check your simulations, you should see the above simulation has been added in your CML dashboard however it has not been started yet. Let's look at another API endpoint that will start our simulation for us and boot the devices up. From the reponse we got you should see an id value, this is the id of our lab that has been created take a copy of that for now and keep it safe. 
 
+```
 {
   "id": "9e9cde",
   "warnings": []
 }
+```
 
 You might have noticed that the simulation is now in the CML system and available but isn't yet running, but don't worry, we're only one API call away from a running simualtion.
 
