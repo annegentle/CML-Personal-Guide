@@ -18,7 +18,7 @@ There is also a Enterprise edition which allows a higher node count and more fle
 
 Alternatively and what I'd recommend doing if you're just starting out and just want to get to grips with CML is to use the excellent DevNet sandbox where you can reserve an instance of CML2 for up to 4 hours. This sandbox provides access to a Cisco Modeling Labs system that can be used to explore the capabilities of the newest release of Cisco Modeling Labs. This is quite a well equipped system with almost 40GB of RAM and 57GB of disk space so theres space to do some pretty decent simulations. All DevNet sandboxes are completely free and can be accessed within seconds.
 
-https://developer.cisco.com/docs/sandbox/#!overview/all-networking-sandboxes 
+https://developer.cisco.com/docs/sandbox/#!networking/networking-overview 
 
 To complete the API section of this lab you will also need API testing tool Postman. To download that please visit the Postman website [here](https://www.postman.com) and install the app for your platform before continuing.
 
